@@ -1,0 +1,83 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+html {
+    background-color: #fffafa;
+}
+
+
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+header {
+    height: 150vh;
+}
+
+.nameSite {
+    position: relative;
+    text-align: center;
+    top: 30px;
+}
+
+.nameCamp {
+    margin-bottom: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+
+    color: #505050;
+}
+
+.chooseYourWorkShop {
+    font-size: 40px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+
+    color: #252525;
+}
+
+.imgWorkShopContainer {
+    display: grid;
+    height: 1000px;
+    margin: 5rem 0 0 0;
+    justify-content: center;
+
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 300px 300px 300px;
+    gap: 20px ;
+
+    background-color: #fee966cc;
+}
+
+.imgBox {
+    margin-top: 30px;
+    border-radius: 10px ;
+    
+    writing-mode: vertical-lr;
+    background-color: #fffafa;
+}
+
+.nameWS {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    color: #131312dc;
+}
+
+@media (max-width: 700px) {
+    .imgWorkShopContainer{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+
+}
+
