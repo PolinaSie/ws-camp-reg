@@ -98,7 +98,7 @@ main {
     color: #131312dc;
 }
 
-.button_click {
+.button_click{
     width: 300px;
     height: 50px;
     margin-top: 10px;
@@ -109,6 +109,87 @@ main {
     font-weight: 600;
     letter-spacing: 0.2rem;
     background-color: #ff914d;
+    cursor: pointer;
+}
+
+.pop_up {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9999999999;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px 15px 110px 15px;
+    position: relative;
+}
+
+.pop_up_body p {
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #252525;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 300px;
+    padding: 17px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
+.pop_up_body input:focus {
+    outline: none;
+}
+
+.pop_up_body button {
+    display: block;
+    width: 300px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: #f5f5f5;
+    border-radius: 10px;
+    background-color: #ffe070;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    font-weight: 100;
+    cursor: pointer;
 }
 
 @media (max-width: 700px) {
