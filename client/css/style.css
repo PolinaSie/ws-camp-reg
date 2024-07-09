@@ -55,6 +55,7 @@ main {
     margin-top: 60px;
     border-radius: 10px ; 
     background-color: #fffafa;
+    box-shadow: 3px 3px 10px #b6a04f;
 }
 
 .box_composition_img {
