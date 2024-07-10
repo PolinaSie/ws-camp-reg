@@ -2,6 +2,7 @@ const app = require('express')();
 const PORT = 8080;
 
 const { Client } = require('pg');
+console.log('it works 111');
 
 const db = new Client({
     host: process.env.HOST,
