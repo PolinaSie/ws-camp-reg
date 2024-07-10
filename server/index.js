@@ -2,9 +2,14 @@ const app = require('express')();
 const PORT = 8080;
 
 const { Client } = require('pg');
+console.log('it works 111');
 
 const db = new Client({
-
+    host: process.env.HOST,
+    user: process.env.DB_USER,
+    port: process.env.PORT,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
     ssl: {
         rejectUnauthorized: false,
       }
@@ -27,4 +32,4 @@ async function getWorkshops(data, table, condition) {
     } catch (err) {
       console.error(err.stack);
     }
-  }
+}
