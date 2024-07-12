@@ -57,7 +57,38 @@ const cardData = [
     }
 ]
 
+
+
 const postContainer = document.querySelector('.img_and_name_workshop_container');
+
+function generate() {
+this.cardData.forEach(element => {
+    
+    const postElement = document.createElement('div');
+    postElement.classList.add('box_composition');
+    postElement.innerHTML = `<div class="box_composition">
+
+<div class="box_composition_img">
+    <img src="/img/${element.coverurl}" alt="" class="ws_view">
+    <img src="/img/${element.leaderavatarurl}" alt="" class="presenter">
+</div>
+    
+<div class="box_composition_buttom">
+    <span class="nameWS">${element.name}</span>
+    <a href="" class="button_click open_pop_up"><button class="button_click" >приєднатись</button></a>
+</div>
+    
+</div>`;
+
+
+
+});
+
+
+
+}
+
+generate();
 
 const postMethods = ()=>{
     cardData.map((postData)=>{
