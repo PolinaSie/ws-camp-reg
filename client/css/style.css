@@ -1,0 +1,207 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fffafa;
+}
+
+
+.nameSite {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 30px;
+}
+
+.nameCamp {
+    margin-bottom: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+
+    color: #505050;
+}
+
+.chooseYourWorkShop {
+    font-size: 40px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+
+    color: #252525;
+}
+
+main {
+    height: 400vh;
+    background-color: #ffe070;
+}
+
+.img_and_name_workshop_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 1rem 0 1rem;
+    justify-content: space-around;
+}
+
+.box_composition {
+    width: 350px;
+    height: 300px;
+    margin-top: 60px;
+    border-radius: 10px ; 
+    background-color: #fffafa;
+    box-shadow: 3px 3px 10px #b6a04f;
+}
+
+.box_composition_img {
+    width: 300px;
+    height: 150px;
+    margin: 1.6rem;
+}
+
+.ws_view {
+    bottom: 30px;
+    width: 300px;
+    height: 130px;
+    z-index: 0;
+}
+
+.presenter {
+    position: relative;
+    left: 220px;
+    top: -150px;
+    width: 100px;
+    border: 10px solid #fffafa;
+    border-radius: 100px;
+    z-index: 1;
+}
+
+.box_composition_buttom {
+    width: 300px;
+    height: 50px;
+    margin: 1.6rem;
+}
+
+.nameWS {
+    display: flex;
+    margin-top: -10px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+
+    color: #131312dc;
+}
+
+.button_click{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    background-color: #ff914d;
+    cursor: pointer;
+}
+
+.pop_up {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9999999999;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px 15px 110px 15px;
+    position: relative;
+}
+
+.pop_up_body p {
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #252525;
+}
+
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 300px;
+    padding: 17px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4b4b4b;
+}
+
+.pop_up_body input:focus {
+    outline: none;
+}
+
+.pop_up_body button {
+    display: block;
+    width: 300px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: #f5f5f5;
+    border-radius: 10px;
+    background-color: #ffe070;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .imgWorkShopContainer{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+
+}
+
+footer {
+    height: 20vh;
+    background-color: #ffe070;
+}
+
