@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-html {
+.workshops-list {
     background-color: #fffafa;
 }
 
 
 .nameSite {
-    position: relative;
+    margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
-    top: 30px;
 }
 
 .nameCamp {
@@ -37,8 +36,7 @@ html {
     color: #252525;
 }
 
-main {
-    height: 400vh;
+.workshops-list {
     background-color: #ffe070;
 }
 
